@@ -18,12 +18,21 @@
         display: flex;
     }
 
-    #experience,
-    .experience-details-container {
-        margin-top: 2rem;
+    .theme-container {
+        padding-left: 1rem;
+        margin-left: -5rem;
     }
 
-    #profile, .section-container {
+    #experience,
+    #projects,
+    #contact,
+    .experience-details-container {
+        margin-top: 2rem;
+        height: fit-content;
+    }
+
+    #profile,
+    .section-container {
         display: block;
     }
 
@@ -116,5 +125,12 @@
 
     .text-container {
         text-align: justify;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    section {
+        height: fit-content;
+        margin-top: 2rem;
     }
 }
