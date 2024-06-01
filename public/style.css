@@ -196,12 +196,15 @@ section {
     height: 400px;
     width: 400px;
     margin: auto;
+    margin-right: 0;
+    justify-content: center;
 }
 
 .section__text {
     align-self: center;
     text-align: center;
     margin: auto;
+    margin-left: 0;
 }
 
 .section__text.p {
@@ -301,6 +304,7 @@ section {
     justify-content: center;
     flex-direction: column;
     margin: auto;
+    margin-left: 0;
 }
 
 .about-containers,
@@ -333,14 +337,6 @@ section {
     height: 80%;
     justify-content: center;
 }
-
-.section__pic-container {
-    height: 400px;
-    width: 400px;
-    margin: auto;
-    justify-content: center;
-}
-
 
 
 /* Experience */
