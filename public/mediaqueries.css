@@ -60,7 +60,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     #contact,
     footer {
         height: 40vh;
@@ -125,6 +125,14 @@
 
     .text-container {
         text-align: justify;
+    }
+
+    .ror-btn {
+        width: 90%;
+    }
+
+    .contact-info-container {
+        margin-right: 1rem;
     }
 }
 
