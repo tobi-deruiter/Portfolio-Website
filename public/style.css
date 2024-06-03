@@ -394,7 +394,7 @@ article .icon {
 .projects-container {
     margin: auto;
     min-height: fit-content;
-    max-width: 70vw;
+    max-width: 115vh;
 }
 
 .color-container {
@@ -407,6 +407,7 @@ article .icon {
     width: 90%;
     height: 90%;
     min-width: 10rem;
+    /* max-width: 68vh; */
 }
 
 .project-title {
