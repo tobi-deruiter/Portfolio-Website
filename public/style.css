@@ -345,7 +345,7 @@ section {
 #experience {
     position: relative;
     margin-top: 2rem;
-    height: fit-content;
+    min-height: fit-content;
 }
 
 .experience-sub-title {
