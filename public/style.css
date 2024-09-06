@@ -298,6 +298,7 @@ section {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .about-details-container {
@@ -344,7 +345,7 @@ section {
 #experience {
     position: relative;
     margin-top: 2rem;
-    /* height: fit-content; */
+    height: fit-content;
 }
 
 .experience-sub-title {
