@@ -19,6 +19,25 @@ p {
     color: rgb(85, 85, 85);
 }
 
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    border-color: black;
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 0.5rem;
+    transition: 300ms;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: grey;
+}
+
 
 /* Transition */
 
@@ -345,7 +364,7 @@ section {
 #experience {
     position: relative;
     margin-top: 2rem;
-    min-height: fit-content;
+    /* min-height: fit-content; */
 }
 
 .experience-sub-title {
@@ -373,6 +392,8 @@ section {
     flex-direction: row;
     gap: 2.5rem;
     justify-content: space-around;
+    max-height: 50vh;
+    overflow-y: auto;
 }
 
 article {
