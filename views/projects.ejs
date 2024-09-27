@@ -1,0 +1,41 @@
+<%- include('header.ejs') %>
+<body>
+    <%- include('navigation.ejs') %>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="projects-container about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/robotuner.png" alt="RoboTuner Image" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">RoboTuner</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Ryan-Ellison/RoboTuner'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/jWH7ovv99QY'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/realm-of-rivals.png" alt="Realm Of Rivals Image" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Realm Of Rivals</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn ror-btn" onclick="location.href='https://tobi-deruiter.itch.io/realm-of-rivals'">
+                            Play The Game Yourself!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <img src="./assets/arrow_light.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./contact'"> -->
+    </section>
+    <%- include('footer.ejs') %>
+    <script src="script.js"></script>
+</body>
+</html>
