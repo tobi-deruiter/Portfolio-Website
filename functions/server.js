@@ -1,10 +1,13 @@
 const   express = require('express'),
-        tools = require('./tools/tools')
+        { onRequest } = require("firebase-functions/v2/https"),
+        cors = require('cors')({origin: true})
+
 const app = express()
 
 app.use(express.static(__dirname + '/public'))
 app.use(express.static(__dirname + '/views'))
 app.use(express.urlencoded({ extended: true }))
+app.use(cors);
 
 app.set('view engine', 'ejs')
 
@@ -27,4 +30,7 @@ app.use('/experience', require('./routes/experience'))
 app.use('/projects', require('./routes/projects'))
 app.use('/contact', require('./routes/contact'))
 
-app.listen(3000)
+// app.listen(3000)
+
+exports.app = onRequest(app)
+exports.devApp = app

@@ -1,9 +1,9 @@
 const   express = require('express'),
-        tools = require('../tools/tools')
+        tools = require('../public/tools/tools')
 const router = express.Router()
 
 router.get('/', (req, res) => {
-    tools.render(res, 'projects', 'My Projects', 'projects.css')
+    tools.render(res, 'home', 'Tobi DeRuiter Portfolio', 'home.css')
 })
 
 module.exports = router

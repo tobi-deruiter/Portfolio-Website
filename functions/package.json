@@ -1,0 +1,31 @@
+{
+  "name": "portfolio-website",
+  "version": "2.0.0",
+  "description": "html css portfolio tutorial website",
+  "author": "Tobi DeRuiter",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log",
+    "devStart": "nodemon devServer.js -e ejs,js,css,html,scss"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "server.js",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0",
+    "nodemon": "^3.1.7"
+  },
+  "private": true
+}

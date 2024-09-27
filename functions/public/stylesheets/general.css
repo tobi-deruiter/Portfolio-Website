@@ -125,6 +125,7 @@ a:hover {
     transition: all 300ms ease-in-out;
     border-radius: 2rem;
     transform: translate(0px, -25px);
+    z-index: 9999;
 }
 
 .menu-links a {
