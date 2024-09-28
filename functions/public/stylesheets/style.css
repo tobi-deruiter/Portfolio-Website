@@ -32,6 +32,20 @@ html {
     background-color: grey;
 }
 
+.btn {
+    height: var(--btn-height);
+}
+
+.btn:hover {
+    background-color: darkviolet;
+    border-color: darkviolet;
+}
+
+.btn-info {
+    background-color:darkgreen;
+    border-color: darkgreen;
+}
+
 /* Navbar */
 
 .nav-link {
