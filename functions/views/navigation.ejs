@@ -1,35 +1,39 @@
-<nav id="desktop-nav">
-    <div class="logo">Tobi DeRuiter</div>
-    <div>
-        <ul class="nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/experience">Experience</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-    </div>
-    <!-- <div class="theme-container">
-        <img src="./assets/theme_dark.png" alt="Dark Theme" onclick="toggleTheme()" class="icon theme-logo">
-    </div> -->
-</nav>
-<nav id="hamburger-nav">
-    <div class="logo">Tobi DeRuiter</div>
-    <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+<nav class="navbar navbar-expand-md bg-light navbar-light fixed-top p-5 pb-0">
+    <div class="container-fluid d-flex">
+        <a class="navbar-brand" href="/">
+            <p class="h2">Tobi DeRuiter</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                        <p class="h4">Home</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">
+                        <p class="h4">About</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/experience">
+                        <p class="h4">Experience</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/projects">
+                        <p class="h4">Projects</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">
+                        <p class="h4">Contact</p>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="menu-links">
-            <li><a href="/" onclick="toggleMenu()">Home</a></li>
-            <li><a href="about" onclick="toggleMenu()">About</a></li>
-            <li><a href="experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
     </div>
-    <!-- <div class="theme-container">
-        <img src="./assets/theme_dark.png" alt="Dark Theme" onclick="toggleTheme()" class="icon theme-logo">
-    </div> -->
 </nav>

@@ -1,25 +1,33 @@
 <%- include('header.ejs') %>
-<body>
+<body class="d-flex flex-column vh-100">
     <%- include('navigation.ejs') %>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic-me2.png" alt="Tobi DeRuiter Profile Picture">
+    <section class="home-section container-fluid justify-content-center">
+        <div class="profile-pic-container mx-auto d-flex align-items-center">
+            <img class="profile-pic img-fluid" src="./assets/profile-pic-me2.png" alt="Tobi DeRuiter Profile Picture">
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Tobi DeRuiter</h1>
-            <p class="section__text__p2">Purdue Student (Exp. Dec, 2024)</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Resume_of_Tobi_DeRuiter[9-26-24].pdf')">
-                    Download CV
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./contact'">
-                    Contact
-                </button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin_light.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/tobi-deruiter/'">
-                <img src="./assets/github_light.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/tobi-deruiter'">
+        <div class="home-text-container mx-auto d-flex align-items-center">
+            <div class="home-text d-block justify-content-center">
+                <p class="h7 text-center">Hello, I'm</p>
+                <h1 class="display-1 text-center">Tobi DeRuiter</h1>
+                <p class="h4 text-center">Purdue Student (Exp. Dec, 2024)</p>
+                <div class="btn-container container-fluid d-flex justify-content-center">
+                    <button class="btn btn-outline-secondary me-2 rounded-pill" onclick="window.open('./assets/Resume_of_Tobi_DeRuiter[9-26-24].pdf')">
+                        Resume
+                    </button>
+                    <button class="btn btn-dark ms-2 rounded-pill" onclick="location.href='./contact'">
+                        Contact
+                    </button>
+                </div>
+                <div class="container mt-2">
+                    <div class="row">
+                        <div class="col-6">
+                            <img class="icon float-end" src="./assets/linkedin_light.png" alt="My LinkedIn Profile" onclick="location.href='https://www.linkedin.com/in/tobi-deruiter/'">
+                        </div>
+                        <div class="col-6">
+                            <img class="icon float-start" src="./assets/github_light.png" alt="My Github Profile" onclick="location.href='https://github.com/tobi-deruiter'">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

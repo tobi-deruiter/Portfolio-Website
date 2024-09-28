@@ -3,7 +3,7 @@ const   express = require('express'),
 const router = express.Router()
 
 router.get('/', (req, res) => {
-    tools.render(res, 'contact', 'Contact Me', 'contact.css')
+    tools.render(res, 'contact', 'Contact Me', 'contact')
 })
 
 module.exports = router

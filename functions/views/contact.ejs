@@ -1,17 +1,19 @@
 <%- include('header.ejs') %>
-<body>
+<body class="d-flex flex-column vh-100">
     <%- include('navigation.ejs') %>
-    <section id="contact">
-        <p class="section__text__p1">Get In Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email_light.png" alt="Email Icon" class="icon contact-icon email-icon">
-                <p><a href="mailto:zachderuiter@gmail.com">zachderuiter@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin_light.png" alt="LinkedIn Icon" class="icon contact-icon">
-                <p><a href="//https://www.linkedin.com/in/tobi-deruiter/">LinkedIn</a></p>
+    <section class="contact-section container-fluid mx-auto d-flex justify-content-center align-items-center">
+        <div class="details-container d-block">
+            <p class="h7 text-center">Get In Touch</p>
+            <h1 class="display-1 text-center">Contact Me</h1>
+            <div class="contact-container border border-dark mx-auto d-flex p-1 mt-4 justify-content-center">
+                <div class="mx-auto d-flex justify-content-center align-items-center">
+                    <img class="email-icon me-2" src="./assets/email_light.png" alt="Email Icon">
+                    <a class="link-secondary" href="mailto:zachderuiter@gmail.com">zachderuiter@gmail.com</a>
+                </div>
+                <div class="mx-auto d-flex justify-content-center align-items-center">
+                    <img class="linkedin-icon me-3" src="./assets/linkedin_light.png" alt="LinkedIn Icon">
+                    <a class="link-secondary" href="//https://www.linkedin.com/in/tobi-deruiter/">LinkedIn</a>
+                </div>
             </div>
         </div>
     </section>

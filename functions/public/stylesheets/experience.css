@@ -1,0 +1,51 @@
+:root {
+    --icon-width: 30px;
+}
+
+.experience-section {
+    margin-top: 15vh;
+    margin-bottom: 3rem;
+    height: fit-content;
+}
+
+.experience-detials-container {
+    flex-direction: column;
+}
+
+.experience-container {
+    margin: auto;
+    max-width: 70vw;
+    gap: 2rem;
+    margin: 2rem;
+    flex-wrap: wrap;
+}
+
+.icon {
+    width: var(--icon-width);
+    height: var(--icon-width);
+}
+
+.details-container {
+    border-radius: 2rem;
+    padding: 1.5rem;
+    flex: 1;
+
+}
+
+.articles-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: left;
+    gap: 0.5rem;
+}

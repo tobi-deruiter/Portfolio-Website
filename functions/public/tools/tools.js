@@ -1,5 +1,9 @@
 const   express = require('express')
 
-exports.render = function (res, file, title, style) {
-    res.render(file, { title: title, style: "stylesheets/"+style })
+exports.render = function (res, file, title, name) {
+    json = {
+        title: title,
+        name: `${name}`
+    }
+    res.render(file, json)
 }

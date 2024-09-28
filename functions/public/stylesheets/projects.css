@@ -1,0 +1,30 @@
+:root {
+    --btn-height: 50px;
+}
+
+.projects-section {
+    margin-top: 15vh;
+    height: fit-content;
+}
+
+.details-container {
+    flex-wrap: wrap;
+}
+
+.projects-container {
+    max-width: 30vw;
+    min-width: fit-content;
+    margin: 2rem 3vw;
+}
+
+.project-img {
+    width: 350px;
+}
+
+.btn {
+    height: var(--btn-height);
+}
+
+.btn:hover {
+    background-color: darkviolet;
+}

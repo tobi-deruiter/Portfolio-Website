@@ -1,0 +1,46 @@
+:root {
+    --icon-width: 2rem;
+}
+
+.contact-section {
+    margin-top: 15vh;
+    height: 75vh;
+    display: flex;
+}
+
+.email-icon {
+    width: calc(var(--icon-width) + 0.5rem);
+}
+
+.linkedin-icon {
+    width: var(--icon-width);
+}
+
+.contact-container {
+    border-radius: 2rem;
+    max-width: 600px;
+    width: 30vw;
+    min-width: 375px;
+    margin: 0% auto;
+}
+
+.link-secondary {
+    text-decoration: none !important;
+}
+
+.link-secondary:hover {
+    text-decoration: underline !important;
+    color: darkviolet !important;
+}
+
+/* Mediaqueries */
+
+@media (max-width: 1199.98px) {
+    .contact-section {
+        margin: 15vh 0% 0%;
+    }
+
+    .contact-container {
+        display: block !important;
+    }
+}
