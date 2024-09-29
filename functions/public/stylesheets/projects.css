@@ -3,7 +3,7 @@
 }
 
 .projects-section {
-    margin-top: 15vh;
+    margin-top: max(15vh, 150px);
     height: fit-content;
 }
 

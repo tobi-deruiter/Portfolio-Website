@@ -1,5 +1,5 @@
 <%- include('header.ejs') %>
-<body class="d-flex flex-column vh-100 bg-light">
+<body class="d-flex flex-column vh-100 bg-<%= locals.theme %>">
     <%- include('navigation.ejs') %>
     <section class="about-section container-fluid mx-auto d-block justify-content-center align-items-center">
         <p class="h7 text-center">Get To Know More</p>
@@ -11,13 +11,13 @@
             <div class="about-me-container mx-auto ms-2">
                 <div class="about-containers justify-content-center">
                     <div class="details-container container m-5 p-2 justify-content-center">
-                        <img class="icon mx-auto d-block" src="./assets/experience_light.png" alt="Experience Icon">
+                        <img class="icon mx-auto d-block" src="./assets/experience_<%= locals.theme %>.png" alt="Experience Icon">
                         <h3 class="text-center">Experience</h3>
                         <p class="text-center">Backend Intern - Rush Market</p>
                         <p class="text-center">CS Instructor - Coding Mind Academy</p>
                     </div>
                     <div class="details-container container m-5 p-2 justify-content-center">
-                        <img class="icon mx-auto d-block" src="./assets/education_light.png" alt="Education Icon">
+                        <img class="icon mx-auto d-block" src="./assets/education_<%= locals.theme %>.png" alt="Education Icon">
                         <h3 class="text-center">Education</h3>
                         <p class="text-center">B.S. in CS and Robotics<br>Purdue University</p>
                     </div>

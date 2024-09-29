@@ -3,7 +3,7 @@
 }
 
 .experience-section {
-    margin-top: 15vh;
+    margin-top: max(15vh, 150px);
     margin-bottom: 3rem;
     height: fit-content;
 }

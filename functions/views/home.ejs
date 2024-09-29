@@ -1,5 +1,5 @@
 <%- include('header.ejs') %>
-<body class="d-flex flex-column vh-100 bg-light">
+<body class="d-flex flex-column vh-100 bg-<%= locals.theme %>">
     <%- include('navigation.ejs') %>
     <section class="home-section container-fluid justify-content-center">
         <div class="profile-pic-container mx-auto d-flex align-items-center">
@@ -21,10 +21,10 @@
                 <div class="container mt-2">
                     <div class="row">
                         <div class="col-6">
-                            <img class="icon float-end" src="./assets/linkedin_light.png" alt="My LinkedIn Profile" onclick="location.href='https://www.linkedin.com/in/tobi-deruiter/'">
+                            <img class="icon float-end" src="./assets/linkedin_<%= locals.theme %>.png" alt="My LinkedIn Profile" onclick="location.href='https://www.linkedin.com/in/tobi-deruiter/'">
                         </div>
                         <div class="col-6">
-                            <img class="icon float-start" src="./assets/github_light.png" alt="My Github Profile" onclick="location.href='https://github.com/tobi-deruiter'">
+                            <img class="icon float-start" src="./assets/github_<%= locals.theme %>.png" alt="My Github Profile" onclick="location.href='https://github.com/tobi-deruiter'">
                         </div>
                     </div>
                 </div>

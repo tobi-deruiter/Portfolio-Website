@@ -1,7 +1,10 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top p-5 pb-0">
+<nav class="navbar navbar-expand-md navbar-light bg-<%= locals.theme %> fixed-top p-5 pb-0">
     <div class="container-fluid d-flex">
         <a class="navbar-brand" href="/">
             <p class="h2">Tobi DeRuiter</p>
+        </a>
+        <a href="/toggle_theme/<%= locals.theme %>">
+            <img class="theme-icon" src="./assets/theme_<%= locals.not_theme %>.png" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -34,7 +37,7 @@
                     </a>
                 </li>
                 <!-- <li class="nav-item ms-auto">
-                    <a class="nav-link toggle-theme" href="javascript:void(0)" onclick="toggleTheme()">
+                    <a class="nav-link toggle-theme" href="/toggle_theme/<%= locals.theme %>" onclick="toggleTheme('<%= locals.theme %>')">
                         <p class="h4">Toggle Theme</p>
                     </a>
                 </li> -->
