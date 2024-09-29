@@ -73,6 +73,14 @@ html {
     border-bottom: 1px solid darkviolet;
 }
 
+.mobile-toggle-theme {
+    display: none;
+}
+
+.desktop-toggle-theme {
+    display: flex;
+}
+
 /* Footer */
 
 footer {
@@ -82,6 +90,14 @@ footer {
 /* Mediaqueries */
 
 @media (max-width: 1199.98px) {
+    .mobile-toggle-theme {
+        display: flex;
+    }
+
+    .desktop-toggle-theme {
+        display: none;
+    }
+
     footer {
         padding: 0px;
     }

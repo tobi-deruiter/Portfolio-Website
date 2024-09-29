@@ -1,13 +1,22 @@
+const {
+    log,
+    info,
+    debug,
+    warn,
+    error,
+    write,
+  } = require("firebase-functions/logger");
+
 exports.setCookies = function (req, res, next, type) {
-    res.cookie("theme", type)
+    res.cookie("__session", type)
     next()
 }
 
 exports.render = function (req, res, next, file, title, name) {
-    theme = req.cookies.theme
+    theme = req.cookies.__session
     not_theme = undefined
     if (theme == undefined) {
-        theme = 'light'
+        theme = 'dark'
     }
     if (theme == 'light') {
         not_theme = 'dark'
