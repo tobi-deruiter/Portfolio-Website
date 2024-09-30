@@ -24,14 +24,18 @@
     max-width: 350px;
 }
 
-.icon {
-    width: var(--icon-width);
-}
-
 .details-container {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 3rem;
     max-width: inherit;
+    min-width: 15rem;
+    width: 17rem;
+}
+
+.icon-e {
+    width: var(--icon-width);
+    height: var(--icon-width);
+    mask-size: var(--icon-width) var(--icon-width);
 }
 
 /* Mediaqueries */

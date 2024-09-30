@@ -21,17 +21,6 @@
     width: 400px;
 }
 
-.icon {
-    width: var(--icon-width);
-    cursor: pointer;
-    border: 3px solid transparent;
-}
-
-.icon:hover {
-    border: 3px solid darkviolet;
-    border-radius: calc(var(--icon-width) / 2);
-}
-
 /* Mediaqueries */
 
 @media (max-width: 1199.98px) {
@@ -59,6 +48,6 @@
     }
 
     .home-text {
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
 }

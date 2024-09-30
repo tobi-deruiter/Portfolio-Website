@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
 
 :root {
     --btn-height: 50px;
     --theme-icon-width: 3rem;
+    --icon-size: 2.5rem;
 }
 
 * {
@@ -39,6 +41,8 @@ html {
 
 .btn {
     height: var(--btn-height);
+    border-width: 2px;
+    border-color: rgb(33, 228, 202);
 }
 
 .btn:hover {
@@ -47,8 +51,8 @@ html {
 }
 
 .btn-info {
-    background-color:darkgreen;
-    border-color: darkgreen;
+    background-color:rgb(33, 228, 202);
+    border-color: rgb(33, 228, 202);
 }
 
 .theme-icon {
@@ -60,6 +64,48 @@ html {
 .theme-icon:hover {
     border: 3px solid darkviolet;
     border-radius: calc(var(--theme-icon-width) / 2);
+}
+
+.display-1 {
+    font-family: 'Moon Dance', cursive, serif;
+    font-size: 90pt;
+    padding-bottom: 1rem;
+    background: linear-gradient(rgb(166, 0, 172), rgb(33, 228, 202));
+    background-clip: text;
+    color: transparent;
+}
+
+.border {
+    border-color: rgb(166, 0, 172) !important;
+}
+
+.icon {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    background-image: radial-gradient(rgb(166, 0, 172), rgb(33, 228, 202));
+    mask-position: center;
+    mask-size: var(--icon-size) var(--icon-size);
+    cursor: pointer;
+    border: 3px solid transparent;
+}
+
+.icon:hover {
+    border: 3px solid darkviolet;
+    border-radius: calc(var(--icon-size) / 2);
+}
+
+.icon-no-effects {
+    cursor: default !important;
+    border: none !important;
+}
+
+.icon-no-effects:hover {
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.h7 {
+    color: grey;
 }
 
 /* Navbar */
@@ -81,6 +127,16 @@ html {
     display: flex;
 }
 
+.navbar {
+    mask-image: linear-gradient(black 65%, transparent);
+}
+
+.navbar-brand p {
+    background: linear-gradient(to bottom right, rgb(166, 0, 172), rgb(33, 228, 202));
+    background-clip: text;
+    color: transparent;
+}
+
 /* Footer */
 
 footer {
@@ -90,12 +146,24 @@ footer {
 /* Mediaqueries */
 
 @media (max-width: 1199.98px) {
+    .navbar {
+        mask-image: linear-gradient(black 75%, transparent);
+    }
+
+    .navbar-nav {
+        margin-bottom: 6rem;
+    }
+
     .mobile-toggle-theme {
         display: flex;
     }
 
     .desktop-toggle-theme {
         display: none;
+    }
+
+    .display-1 {
+        font-size: 70pt;
     }
 
     footer {

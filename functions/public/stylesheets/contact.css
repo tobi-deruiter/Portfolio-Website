@@ -12,8 +12,10 @@
     width: calc(var(--icon-width) + 0.5rem);
 }
 
-.linkedin-icon {
+.icon {
     width: var(--icon-width);
+    height: var(--icon-width);
+    mask-size: var(--icon-width) var(--icon-width);
 }
 
 .contact-container {
