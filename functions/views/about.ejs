@@ -2,40 +2,104 @@
 <body class="d-flex flex-column vh-100 bg-<%= locals.theme %>">
     <%- include('navigation.ejs') %>
     <section class="about-section container-fluid mx-auto d-block justify-content-center align-items-center">
-        <p class="h7 text-center">Get To Know More</p>
-        <h1 class="display-1 text-center">About Me</h1>
-        <div class="content-container container-fluid mx-auto justify-content-center align-items-center">
-            <div class="about-pic-container mx-auto me-2 d-flex align-items-center">
-                <img class="about-pic img-fluid mx-auto d-block" src="./assets/about-me-pic.jpg" alt="Profile Picture">
+        <div class="about-pic-container">
+            <img class="about-pic" src="./assets/about-me-bar-pic.jpg" alt="Profile Picture">
+            <div class="title-container">
+                <p class="h7 text-center">Get To Know More</p>
+                <h1 class="display-1 text-center">About Me</h1>    
             </div>
-            <div class="about-me-container mx-auto ms-2">
-                <div class="about-containers justify-content-center">
-                    <div class="details-container container m-5 p-2 border justify-content-center">
-                        <div class="icon icon-no-effects mx-auto d-block icon-e m-1" style="mask-image: url('../assets/experience.svg');"></div>
-                        <h3 class="text-center">Experience</h3>
-                        <p class="text-center">
-                            Backend Intern - Rush Market<br>
-                            Computer Science Instructor - Coding Mind Academy
-                        </p>
-                    </div>
-                    <div class="details-container container m-5 p-2 border justify-content-center">
+        </div>
+        <div class="content-container container-fluid mx-auto justify-content-center align-items-center">
+            <div class="about-me-container mx-auto justify-content-center">
+                <div class="about-containers mx-auto justify-content-center align-content-center">
+                    <div class="details-container container mx-auto p-2 border justify-content-center">
                         <div class="icon icon-no-effects mx-auto d-block" style="mask-image: url('../assets/education.svg');"></div>
-                        <h3 class="text-center">Education</h3>
-                        <p class="text-center">
-                            B.S. in Computer Science and Robotics<br>
-                            Purdue University
-                        </p>
+                        <h3 class="text-center gradient">Education</h3>
+                        <table class="table table-hover">
+                            <tbody>
+                            <tr onclick="location.href='/experience/#university'">
+                                <td class="align-content-center">Purdue University</td>
+                                <td class="text-center">Computer Science: Software Engineering<br>Robotics Engineering Technology</td>
+                            </tr>
+                            <tr onclick="location.href='/experience/#university'">
+                                <td class="align-content-center">UNSW, Australia</td>
+                                <td class="text-center">Study Abroad Jan. - May 2023</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="details-container container mx-auto p-2 border justify-content-center">
+                        <div class="icon icon-no-effects mx-auto d-block icon-exp m-1" style="mask-image: url('../assets/experience.svg');"></div>
+                        <h3 class="text-center gradient">Experience</h3>
+                        <table class="table table-hover">
+                            <tbody>
+                            <tr onclick="location.href='/experience/#experience'">
+                                <td class="align-content-center">Instructor</td>
+                                <td class="text-center">Coding Mind Academy</td>
+                            </tr>
+                            <tr onclick="location.href='/experience/#experience'">
+                                <td class="align-content-center">Internship</td>
+                                <td class="text-center">Rush Market</td>
+                            </tr>
+                            <tr onclick="location.href='/experience/#experience'">
+                                <td class="align-content-center">Internship</td>
+                                <td class="text-center">University of Nebraska at Omaha</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <!-- <button type="button" class="btn rounded-pill mx-auto d-block" data-bs-toggle="modal" data-bs-target="#rushMarketModal">
+                            Rush Market
+                        </button>
+                        <br> -->
+                        <!-- <button type="button" class="btn rounded-pill mx-auto d-block" data-bs-toggle="modal" data-bs-target="#cmModal">
+                            Coding Mind Academy
+                        </button> -->
                     </div>
                 </div>
-                <div class="about-me-text ps-2 pe-2">
+                <div class="about-me-text mt-4 ps-2 pe-2">
                     <p class="text-center">
-                        Expected to graduate with a B.S. in Computer Science and a B.S. in Robotics
-                        Engineering Technology from Purdue University in December, 2024.
+                        I am expected to graduate December, 2024 from Purdue University with a Bachelor of
+                        Science in Computer Science with a concentration in Software Engineering and a
+                        Bachelor of Science in Robotics Engineering Technology. I am passionate about
+                        pursuing a careeer where I can make a difference be a positive influence.
                     </p>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="modal align-content-center" id="rushMarketModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h2 class="modal-title gradient">Computer Science Internship</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h6 class="gradient">About the Company...</h6>
+                    <p class="ps-4">
+                        Rush Market is a startup company which provides a sustainable shopping experience
+                        by sourcing furniture products from returns, overstocks, close-out-sales, etc.
+                    </p>
+                    <br>
+                    <h6 class="gradient">What I did...</h6>
+                    <p class="ps-4">
+                        I 
+                    </p>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">Visit the Rush Market Webite</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      
     <%- include('footer.ejs') %>
     <%- include('scripts.ejs') %>
 </body>

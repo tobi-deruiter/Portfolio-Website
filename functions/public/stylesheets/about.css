@@ -4,64 +4,103 @@
 
 .about-section {
     margin-top: max(15vh, 150px);
-    height: 75vh;
+    height: fit-content;
+    padding: 0%;
 }
 
 .content-container {
     display: flex;
-    max-width: 80vw;
-    min-width: 375px;
+    max-width: 80vw !important;
+    /* min-width: ; */
 }
+
+/* .about-me-container {
+    max-width: ;
+} */
 
 .about-containers {
     display: flex;
 }
 
+.about-pic-container {
+    position: relative;
+    margin-top: -20%;
+    margin-bottom: -15%;
+    z-index: -1000;
+}
+
 .about-pic {
-    border-radius: 2rem;
-    width: 25vw;
-    min-width: 200px;
-    max-width: 350px;
+    width: 100%;
+    mask-image: linear-gradient(black 40%, transparent 75%);
+}
+
+.title-container {
+    --pad: 4rem;
+    position: absolute;
+    top: calc(45% - var(--pad));
+    left: calc(60% - var(--pad));
+    background-color: black;
+    padding: var(--pad);
+    mask-image: radial-gradient(black 57%, transparent 65%);
 }
 
 .details-container {
-    /* border: 1px solid black; */
     border-radius: 3rem;
     max-width: inherit;
     min-width: 15rem;
-    width: 17rem;
+    width: 45%;
 }
 
-.icon-e {
+.icon-exp {
     width: var(--icon-width);
     height: var(--icon-width);
     mask-size: var(--icon-width) var(--icon-width);
 }
 
+table tr {
+    cursor: pointer;
+}
+
+.about-me-text {
+    max-width: 100%;
+}
+
 /* Mediaqueries */
 
-@media (max-width: 1199.98px) {
+@media (max-width: 1200px) {
     .about-section {
         height: fit-content;
     }
 
     .content-container {
         display: block;
+        padding: 0% !important;
     }
 
     .about-containers {
         display: block;
     }
 
+    .title-container {
+        --pad: 4rem;
+        top: calc(40% - var(--pad));
+        left: calc(47% - var(--pad));
+    }
+
     .details-container {
-        margin: 2rem 0 !important;
+        margin: 2rem auto !important;
     }
+}
 
-    .about-pic-container {
-        margin: 2rem !important;
+@media (max-width: 992px) {
+    .about-pic-container{
+        margin-bottom: 0%;
     }
-
-    .about-me-container {
-        margin: 2rem !important;
+    
+    .title-container {
+        position: static;
+        background-color: transparent;
+        padding: 0%;
+        mask-image: none;
     }
 }
