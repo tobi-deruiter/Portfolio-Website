@@ -11,12 +11,7 @@
 .content-container {
     display: flex;
     max-width: 80vw !important;
-    /* min-width: ; */
 }
-
-/* .about-me-container {
-    max-width: ;
-} */
 
 .about-containers {
     display: flex;
@@ -31,7 +26,7 @@
 
 .about-pic {
     width: 100%;
-    mask-image: linear-gradient(black 40%, transparent 75%);
+    mask-image: linear-gradient(black 55%, transparent 75%);
 }
 
 .title-container {
@@ -39,7 +34,6 @@
     position: absolute;
     top: calc(45% - var(--pad));
     left: calc(60% - var(--pad));
-    background-color: black;
     padding: var(--pad);
     mask-image: radial-gradient(black 57%, transparent 65%);
 }

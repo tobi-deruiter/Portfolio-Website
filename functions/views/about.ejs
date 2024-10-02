@@ -4,7 +4,7 @@
     <section class="about-section container-fluid mx-auto d-block justify-content-center align-items-center">
         <div class="about-pic-container">
             <img class="about-pic" src="./assets/about-me-bar-pic.jpg" alt="Profile Picture">
-            <div class="title-container">
+            <div class="title-container bg-<%= locals.theme %>">
                 <p class="h7 text-center">Get To Know More</p>
                 <h1 class="display-1 text-center">About Me</h1>    
             </div>
@@ -47,13 +47,6 @@
                             </tr>
                             </tbody>
                         </table>
-                        <!-- <button type="button" class="btn rounded-pill mx-auto d-block" data-bs-toggle="modal" data-bs-target="#rushMarketModal">
-                            Rush Market
-                        </button>
-                        <br> -->
-                        <!-- <button type="button" class="btn rounded-pill mx-auto d-block" data-bs-toggle="modal" data-bs-target="#cmModal">
-                            Coding Mind Academy
-                        </button> -->
                     </div>
                 </div>
                 <div class="about-me-text mt-4 ps-2 pe-2">
@@ -67,39 +60,6 @@
             </div>
         </div>
     </section>
-
-    <div class="modal align-content-center" id="rushMarketModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-        
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h2 class="modal-title gradient">Computer Science Internship</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-        
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <h6 class="gradient">About the Company...</h6>
-                    <p class="ps-4">
-                        Rush Market is a startup company which provides a sustainable shopping experience
-                        by sourcing furniture products from returns, overstocks, close-out-sales, etc.
-                    </p>
-                    <br>
-                    <h6 class="gradient">What I did...</h6>
-                    <p class="ps-4">
-                        I 
-                    </p>
-                </div>
-
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn rounded-pill" data-bs-dismiss="modal">Visit the Rush Market Webite</button>
-                </div>
-            </div>
-        </div>
-    </div>
-      
     <%- include('footer.ejs') %>
     <%- include('scripts.ejs') %>
 </body>
