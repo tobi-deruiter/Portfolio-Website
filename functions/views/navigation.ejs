@@ -5,18 +5,12 @@
         </a>
         <a class="desktop-toggle-theme pb-2" href="/toggle_theme/<%= locals.theme %>">
             <div class="icon" style="mask-image: url('../assets/theme_<%= locals.not_theme %>.svg');"></div>
-            <!-- <img class="theme-icon" src="./assets/theme_<%= locals.not_theme %>.png" alt=""> -->
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav ms-auto pt-1">
-                <li class="nav-item ms-auto">
-                    <a class="nav-link" href="/">
-                        <p class="h4">Home</p>
-                    </a>
-                </li>
                 <li class="nav-item ms-auto">
                     <a class="nav-link" href="/about">
                         <p class="h4">About</p>
@@ -40,7 +34,6 @@
                 <li class="nav-item ms-auto mobile-toggle-theme">
                     <a href="/toggle_theme/<%= locals.theme %>">
                         <div class="icon" style="mask-image: url('../assets/theme_<%= locals.not_theme %>.svg');"></div>
-                        <!-- <img class="theme-icon" src="./assets/theme_<%= locals.not_theme %>.png" alt=""> -->
                     </a>
                 </li>
             </ul>
