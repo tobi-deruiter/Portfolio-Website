@@ -4,22 +4,99 @@
     height: fit-content;
 }
 
-.experience-detials-container {
+.experience-details-container {
     flex-direction: column;
+    border-bottom: 2px solid darkviolet;
 }
 
 .experience-container {
-    margin: auto;
-    max-width: 70vw;
+    max-width: 75vw;
     gap: 2rem;
     margin: 2rem;
     flex-wrap: wrap;
 }
 
+.id-div {
+    margin-top: -5rem;
+    margin-bottom: 8rem;
+}
+
+/* university section */
+
+.featurette {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid cyan;
+}
+
+.purdue-logo {
+    width: 325px;
+}
+
+.unsw-logo {
+    height: 200px;
+}
+
+.transcript-btn {
+    height: 75px;
+    width: 200px;
+}
+
+.club-photo {
+    max-height: 450px;
+}
+
+.carousel-indicators button {
+    height: 1rem !important;
+}
+
+.carousel-indicators button:hover {
+    height: 1rem !important;
+    background-color: darkviolet !important;
+}
+
+/* previous work section */
+
+.cm-logo {
+    width: 400px;
+    cursor: pointer;
+}
+
+.rush-logo {
+    width: 400px;
+    border-color: transparent !important;
+    cursor: pointer;
+}
+
+.uno-logo {
+    width: 275px;
+}
+
+.left-skills {
+    height: fit-content;
+}
+
+.modal-dialog {
+    max-width: 350px;
+}
+
+.modal-body article h5 {
+    align-content: center;
+    margin: 0;
+}
+
+/* skills section */
+
 .details-container {
     border-radius: 2rem;
     padding: 1rem;
     flex: 1;
+}
+
+.details-container h2 {
+    margin-bottom: 1rem;
+    min-height: fit-content;
+    border-bottom: 1px solid darkviolet;
 }
 
 .articles-container {
@@ -41,4 +118,8 @@ article {
     margin-left: 1rem;
     margin-right: auto;
     gap: 0.5rem;
+}
+
+article h5 {
+    max-width: 200px;
 }

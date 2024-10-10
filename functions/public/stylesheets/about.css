@@ -30,10 +30,10 @@
 }
 
 .title-container {
-    --pad: 4rem;
+    --pad: 5rem;
     position: absolute;
     top: calc(45% - var(--pad));
-    left: calc(60% - var(--pad));
+    left: calc(55% - var(--pad));
     padding: var(--pad);
     mask-image: radial-gradient(black 57%, transparent 65%);
 }
