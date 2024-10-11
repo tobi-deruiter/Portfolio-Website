@@ -71,6 +71,7 @@ table tr {
 
 .carousel-item img {
     max-height: 50vh;
+    height: 50vh;
 }
 
 .game-logos {
