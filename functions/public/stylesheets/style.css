@@ -160,6 +160,15 @@ footer {
         font-size: 70pt;
     }
 
+    .lead {
+        font-size: medium;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
     footer {
         padding: 0px;
     }

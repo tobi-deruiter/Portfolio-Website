@@ -51,8 +51,20 @@
 }
 
 .carousel-indicators button:hover {
-    height: 1rem !important;
     background-color: darkviolet !important;
+}
+
+.carousel-item {
+    min-height: 450px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: darkviolet !important;
+    mask-image: radial-gradient(black 10%, transparent 10%);
+    height: 50% !important;
+    margin-top: auto !important;
+    margin-bottom: 0 !important;
 }
 
 /* previous work section */

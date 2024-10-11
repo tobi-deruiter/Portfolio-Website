@@ -8,6 +8,8 @@
     padding: 0%;
 }
 
+/* about title section */
+
 .content-container {
     display: flex;
     max-width: 80vw !important;
@@ -19,23 +21,21 @@
 
 .about-pic-container {
     position: relative;
-    margin-top: -20%;
-    margin-bottom: -15%;
+    margin-top: -25%;
+    margin-bottom: -5%;
     z-index: -1000;
 }
 
 .about-pic {
     width: 100%;
-    mask-image: linear-gradient(black 55%, transparent 75%);
+    mask-image: linear-gradient(black 75%, transparent 75%);
 }
 
 .title-container {
-    --pad: 5rem;
     position: absolute;
-    top: calc(45% - var(--pad));
-    left: calc(55% - var(--pad));
-    padding: var(--pad);
-    mask-image: radial-gradient(black 57%, transparent 65%);
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 .details-container {
@@ -57,6 +57,46 @@ table tr {
 
 .about-me-text {
     max-width: 100%;
+}
+
+/* what i love section */
+
+#whatILoveCarousel {
+    width: 80vw !important;
+}
+
+.carousel-item {
+    min-height: 55vh;
+}
+
+.carousel-item img {
+    max-height: 50vh;
+}
+
+.game-logos {
+    max-height: 25vh !important;
+}
+
+/* .carousel-item.bg-dark {
+    background-color: rgb(48, 48, 48) !important;
+} */
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: darkviolet !important;
+    mask-image: radial-gradient(black 10%, transparent 10%);
+    height: 50% !important;
+    margin-top: auto !important;
+    margin-bottom: 0 !important;
+}
+
+.carousel-indicators button {
+    height: 1rem !important;
+    cursor: pointer;
+}
+
+.carousel-indicators button:hover {
+    background-color: darkviolet !important;
 }
 
 /* Mediaqueries */
@@ -84,6 +124,10 @@ table tr {
     .details-container {
         margin: 2rem auto !important;
     }
+
+    .game-logo-containers {
+        width: 45% !important;
+    }
 }
 
 @media (max-width: 992px) {
@@ -93,8 +137,6 @@ table tr {
     
     .title-container {
         position: static;
-        background-color: transparent;
-        padding: 0%;
-        mask-image: none;
+        transform: translate(0, 0);
     }
 }

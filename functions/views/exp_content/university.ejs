@@ -3,6 +3,7 @@
 <h1 class="display-1 text-center">University</h1>
 <div class="experience-details-container d-flex justify-content-center mt-2">
     <div class="experience-container mx-auto d-block">
+        <div id="purdue" class="id-div"></div>
         <div class="row featurette">
             <div class="col-md-7">
                 <h2 class="featurette-heading">
@@ -23,6 +24,7 @@
                 <img class="purdue-logo mx-auto d-block img-fluid" src="../assets/purdue_logo.png" alt="Purdue Logo">
             </div>
         </div>
+        <div id="unsw" class="id-div"></div>
         <div class="row featurette">
             <div class="col-md-7 order-md-2">
                 <h2 class="featurette-heading">
@@ -43,12 +45,12 @@
         <div class="clubs-section mt-4 mb-4">
             <div id="clubs" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#clubs" data-bs-slide-to="0" class="active"></button>
-                  <button type="button" data-bs-target="#clubs" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#clubs" data-bs-slide-to="0" class="rounded-pill active"></button>
+                  <button type="button" data-bs-target="#clubs" data-bs-slide-to="1" class="rounded-pill "></button>
                 </div>
               
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item mb-5 active">
                         <div class="row d-flex">
                             <div class="col-md-6 order-md-2">
                                 <h2 class="featurette-heading text-end">
@@ -65,11 +67,11 @@
                                 </p>
                             </div>
                             <div class="col-md-6 order-md-1">
-                                <img src="../assets/fpc.jpg" alt="Fluid Power Clud" class="d-block club-photo img-fluid float-start">
+                                <img class="d-block club-photo img-fluid float-start rounded-3" src="../assets/fpc.jpg" alt="Fluid Power Clud">
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item mb-5">
                         <div class="row d-flex">
                             <div class="col-md-6">
                                 <h2 class="featurette-heading">
@@ -87,11 +89,19 @@
                                 </p>
                             </div>
                             <div class="col-md-6">
-                                <img src="../assets/brc.jpg" alt="Boiler Robotics Club" class="d-block club-photo img-fluid float-end">
+                                <img class="d-block club-photo img-fluid float-end rounded-3" src="../assets/brc.jpg" alt="Boiler Robotics Club">
                             </div>
                         </div>
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#clubs" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#clubs" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </div>
