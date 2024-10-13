@@ -76,11 +76,8 @@ table tr {
 
 .game-logos {
     max-height: 25vh !important;
+    height: auto !important;
 }
-
-/* .carousel-item.bg-dark {
-    background-color: rgb(48, 48, 48) !important;
-} */
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -128,6 +125,10 @@ table tr {
 
     .game-logo-containers {
         width: 45% !important;
+    }
+
+    .featurette-heading {
+        text-align: center !important;
     }
 }
 
