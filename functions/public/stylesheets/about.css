@@ -82,7 +82,7 @@ table tr {
 .carousel-control-prev,
 .carousel-control-next {
     background-color: darkviolet !important;
-    mask-image: radial-gradient(black 10%, transparent 10%);
+    mask-image: radial-gradient(black 10%, transparent 11%);
     height: 50% !important;
     margin-top: auto !important;
     margin-bottom: 0 !important;
@@ -91,9 +91,6 @@ table tr {
 .carousel-indicators button {
     height: 1rem !important;
     cursor: pointer;
-}
-
-.carousel-indicators button:hover {
     background-color: darkviolet !important;
 }
 
@@ -130,9 +127,7 @@ table tr {
     .featurette-heading {
         text-align: center !important;
     }
-}
 
-@media (max-width: 992px) {
     .about-pic-container{
         margin-bottom: 0%;
     }
