@@ -71,12 +71,14 @@ table tr {
 
 .carousel-item img {
     max-height: 50vh;
-    height: 50vh;
+    height: auto;
+    width: 412px;
 }
 
 .game-logos {
-    max-height: 25vh !important;
+    max-height: 250px !important;
     height: auto !important;
+    width: auto !important;
 }
 
 .carousel-control-prev,
@@ -96,7 +98,7 @@ table tr {
 
 /* Mediaqueries */
 
-@media (max-width: 1200px) {
+@media (max-width: 1199.98px) {
     .about-section {
         height: fit-content;
     }
@@ -122,6 +124,10 @@ table tr {
 
     .game-logo-containers {
         width: 45% !important;
+    }
+
+    .game-logos {
+        max-height: 150px !important;
     }
 
     .featurette-heading {
