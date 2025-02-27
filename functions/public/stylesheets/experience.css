@@ -48,9 +48,7 @@
 
 .carousel-indicators button {
     height: 1rem !important;
-}
-
-.carousel-indicators button:hover {
+    cursor: pointer;
     background-color: darkviolet !important;
 }
 
@@ -61,7 +59,7 @@
 .carousel-control-prev,
 .carousel-control-next {
     background-color: darkviolet !important;
-    mask-image: radial-gradient(black 10%, transparent 10%);
+    mask-image: radial-gradient(black 10%, transparent 11%);
     height: 50% !important;
     margin-top: auto !important;
     margin-bottom: 0 !important;
@@ -103,6 +101,7 @@
     border-radius: 2rem;
     padding: 1rem;
     flex: 1;
+    max-width: 350px;
 }
 
 .details-container h2 {

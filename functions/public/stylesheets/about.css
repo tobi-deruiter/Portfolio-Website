@@ -71,21 +71,20 @@ table tr {
 
 .carousel-item img {
     max-height: 50vh;
-    height: 50vh;
+    height: auto;
+    width: 412px;
 }
 
 .game-logos {
-    max-height: 25vh !important;
+    max-height: 250px !important;
+    height: auto !important;
+    width: auto !important;
 }
-
-/* .carousel-item.bg-dark {
-    background-color: rgb(48, 48, 48) !important;
-} */
 
 .carousel-control-prev,
 .carousel-control-next {
     background-color: darkviolet !important;
-    mask-image: radial-gradient(black 10%, transparent 10%);
+    mask-image: radial-gradient(black 10%, transparent 11%);
     height: 50% !important;
     margin-top: auto !important;
     margin-bottom: 0 !important;
@@ -94,15 +93,12 @@ table tr {
 .carousel-indicators button {
     height: 1rem !important;
     cursor: pointer;
-}
-
-.carousel-indicators button:hover {
     background-color: darkviolet !important;
 }
 
 /* Mediaqueries */
 
-@media (max-width: 1200px) {
+@media (max-width: 1199.98px) {
     .about-section {
         height: fit-content;
     }
@@ -129,9 +125,15 @@ table tr {
     .game-logo-containers {
         width: 45% !important;
     }
-}
 
-@media (max-width: 992px) {
+    .game-logos {
+        max-height: 150px !important;
+    }
+
+    .featurette-heading {
+        text-align: center !important;
+    }
+
     .about-pic-container{
         margin-bottom: 0%;
     }
