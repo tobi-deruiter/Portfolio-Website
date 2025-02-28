@@ -1,5 +1,8 @@
 :root {
     --btn-height: 50px;
+    --project-img-width: 350px;
+    --project-img-height: 366px;
+    --project-img-font-size: 38pt;
 }
 
 .projects-section {
@@ -18,8 +21,8 @@
 }
 
 .project-img {
-    width: 350px;
-    height: 366px;
+    width: var(--project-img-width);
+    height: var(--project-img-height);
 }
 
 .btn {
@@ -28,4 +31,24 @@
 
 .btn:hover {
     background-color: darkviolet;
+}
+
+.img-text-center {
+    font-size: var(--project-img-font-size);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+@media (max-width: 991.98px) {
+    .project-img {
+        width: calc(var(--project-img-width) / 2);
+        height: calc(var(--project-img-height) / 2);
+    }
+
+    .img-text-center {
+        font-size: calc(var(--project-img-font-size) / 2);
+    }
 }
