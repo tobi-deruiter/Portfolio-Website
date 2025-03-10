@@ -1,8 +1,0 @@
-{
-  "projects": {
-    "default": "tobi-deruiter-portfolio",
-    "tobi-deruiter-portfolio": "html-css-portfolio"
-  },
-  "targets": {},
-  "etags": {}
-}

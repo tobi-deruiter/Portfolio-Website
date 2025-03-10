@@ -1,5 +1,5 @@
 const   express = require('express'),
-        tools = require('../public/tools/tools')
+        tools = require('../tools/tools')
 const router = express.Router()
 
 router.get('/', (req, res, next) => {

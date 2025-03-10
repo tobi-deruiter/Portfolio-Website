@@ -1,5 +1,4 @@
 const   express = require('express'),
-        { onRequest } = require("firebase-functions/v2/https"),
         cors = require('cors')({origin: true}),
         cookie = require('cookie-parser')
 
@@ -23,5 +22,11 @@ app.use('/projects', require('./routes/projects'))
 app.use('/contact', require('./routes/contact'))
 app.use('/toggle_theme', require('./routes/toggle_theme'))
 
-exports.app = onRequest(app)
-exports.devApp = app
+const port = 3000;
+app.listen(port, (error)=>{
+    if (!error) {
+        console.log("Server Running on Port " + port);
+    } else {
+        console.log("Error: " + error);
+    }
+})
