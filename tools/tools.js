@@ -1,12 +1,3 @@
-const {
-    log,
-    info,
-    debug,
-    warn,
-    error,
-    write,
-  } = require("firebase-functions/logger");
-
 exports.setCookies = function (req, res, next, type) {
     res.cookie("__session", type)
     next()

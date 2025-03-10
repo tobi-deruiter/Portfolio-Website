@@ -67,6 +67,11 @@
 
 /* previous work section */
 
+.fsdev-logo {
+    width: 250px;
+    cursor: pointer;
+}
+
 .cm-logo {
     width: 400px;
     cursor: pointer;
