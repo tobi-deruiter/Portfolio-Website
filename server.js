@@ -22,10 +22,9 @@ app.use('/projects', require('./routes/projects'))
 app.use('/contact', require('./routes/contact'))
 app.use('/toggle_theme', require('./routes/toggle_theme'))
 
-const port = 3000;
-app.listen(port, (error)=>{
+app.listen((error)=>{
     if (!error) {
-        console.log("Server Running on Port " + port);
+        console.log("--- Server is live! ---");
     } else {
         console.log("Error: " + error);
     }
