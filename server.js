@@ -1,6 +1,7 @@
 const   express = require('express'),
         cors = require('cors')({origin: true}),
         cookie = require('cookie-parser')
+require('dotenv').config()
 
 const app = express()
 
@@ -22,9 +23,10 @@ app.use('/projects', require('./routes/projects'))
 app.use('/contact', require('./routes/contact'))
 app.use('/toggle_theme', require('./routes/toggle_theme'))
 
-app.listen((error)=>{
+const port = process.env.PORT || 3000;
+app.listen(port, (error)=>{
     if (!error) {
-        console.log("--- Server is live! ---");
+        console.log("Server Running on Port " + port);
     } else {
         console.log("Error: " + error);
     }
